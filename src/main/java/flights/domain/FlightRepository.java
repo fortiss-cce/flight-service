@@ -1,10 +1,8 @@
-package flights;
-
-import org.springframework.data.repository.Repository;
+package flights.domain;
 
 import java.util.List;
 
-public interface FlightRepository extends Repository<Flight, Long> {
+public interface FlightRepository {
 
     Flight findByFlightNumber(String flightNumber);
 
